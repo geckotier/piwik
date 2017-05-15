@@ -78,6 +78,7 @@ describe("Overlay", function () {
                     y: iframe.offset().top + innerOffset.top + 16
                 };
             });
+            page.sendMouseEvent('mousemove', pos);
             page.sendMouseEvent('click', pos);
             page.wait(2000);
 
